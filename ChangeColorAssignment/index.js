@@ -15,8 +15,7 @@ function redColorInc(){
     }
     h2.innerText = `rgba(${red.value}, ${green.value}, ${blue.value}, ${alpha.value})`
     changeColor(red.value,green.value,blue.value,alpha.value)
-    console.log(red.value);
-    
+   
 }
 function greenColorInc(){
     var red = document.getElementById('red');
@@ -30,7 +29,7 @@ function greenColorInc(){
     }
     h2.innerText = `rgba(${red.value}, ${green.value}, ${blue.value}, ${alpha.value})`
     changeColor(red.value,green.value,blue.value,alpha.value)
-    console.log(red.value);
+  
     
 
 }
@@ -46,7 +45,7 @@ function blueColorInc(){
     }
     h2.innerText = `rgba(${red.value}, ${green.value}, ${blue.value}, ${alpha.value})`
     changeColor(red.value,green.value,blue.value,alpha.value)
-    console.log(red.value);
+   
 
 }
 function alphaColorInc(){
@@ -62,7 +61,7 @@ function alphaColorInc(){
 
     h2.innerText = `rgba(${red.value}, ${green.value}, ${blue.value}, ${alpha.value})`
     changeColor(red.value,green.value,blue.value,alpha.value)
-    console.log(red.value);
+   
 
 
 }
@@ -76,13 +75,12 @@ function redColorDec(){
     var plusNum = red.value;
     red.value  = parseInt(plusNum) -1
     
-    if (red.value < 0){
+    if (red.value < 0 || red.value > 256){
         red.value = '255'
     }
     h2.innerText = `rgba(${red.value}, ${green.value}, ${blue.value}, ${alpha.value})`
     changeColor(red.value,green.value,blue.value,alpha.value)
-    console.log(red.value);
-    
+  
 }
 function greenColorDec(){
     var red = document.getElementById('red');
@@ -91,13 +89,12 @@ function greenColorDec(){
     var green = document.getElementById('green');
     var plusNum = green.value;
     green.value  = parseInt(plusNum) - 1
-    if (green.value < 0){
+    if (green.value < 0 || green.value){
         green.value = '255'
     }
     h2.innerText = `rgba(${red.value}, ${green.value}, ${blue.value}, ${alpha.value})`
     changeColor(red.value,green.value,blue.value,alpha.value)
-    console.log(red.value);
-    
+  
 
 }
 function blueColorDec(){
@@ -107,13 +104,12 @@ function blueColorDec(){
     var green = document.getElementById('green');
     var plusNum = blue.value;
     blue.value  = parseInt(plusNum)  - 1
-    if (blue.value < 0){
+    if (blue.value < 0  || blue.value){
         blue.value = '255'
     }
     h2.innerText = `rgba(${red.value}, ${green.value}, ${blue.value}, ${alpha.value})`
     changeColor(red.value,green.value,blue.value,alpha.value)
-    console.log(red.value);
-
+    
 }
 function alphaColorDec(){
     var red = document.getElementById('red');
@@ -122,13 +118,13 @@ function alphaColorDec(){
     var green = document.getElementById('green');
     var plusNum = alpha.value;
     alpha.value  = plusNum - 0.1
-    if (alpha.value < 0){
+    if (alpha.value < 0 ||  alpha.value >1){
         alpha.value = '1'
     }
 
     h2.innerText = `rgba(${red.value}, ${green.value}, ${blue.value}, ${alpha.value})`
     changeColor(red.value,green.value,blue.value,alpha.value)
-    console.log(red.value);
+  
 
 
 }
