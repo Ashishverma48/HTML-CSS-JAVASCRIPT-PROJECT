@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="main_div">
+        <div id="h2_div">
+            <h2 id="rgb_h2">rgba(89,78,65,.6)</h2>
+        </div>
+        <div class="input_div">
+            <div>
+                <span>RED</span>
+                <input type="range" name="red" id="red" min="0" max="255" step="1" value="121" onchange="onChangeBGColor()">
+                <span id="red_val">89</span>
+            </div>
+            <div>
+                <span>GREEN</span>
+                <input type="range" name="green" id="green" min="0" step="1" value="76" max="255" onchange="onChangeBGColor()">
+                <span id="green_val">78</span>
+            </div>
+            <div>
+                <span>BLUE</span>
+                <input type="range" name="blue" id="blue" min="0" step="1" value="89" max="255" onchange="onChangeBGColor()">
+                <span id="blue_val">65</span>
+            </div>
+            <div>
+                <span>ALPHA</span>
+                <input type="range" name="alpha" id="alpha" min="0" step=".1" value="1" max="1" onchange="onChangeBGColor()">
+                <span id="alpha_val">.6</span>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
