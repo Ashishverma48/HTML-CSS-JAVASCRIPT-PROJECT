@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <span class="text text-first">
+            I 'm a &nbsp;
+
+
+        </span >
+        <span class="text text-sec">
+            Web Developer
+        </span>
+    </div>
+</body>
+</html>
+<script>
+    const text = document.querySelector('.text-sec');
+
+    const textChange = ()=>{
+        setTimeout(() => {
+            text.textContent= 'Web Developer';
+        }, 0);
+        setTimeout(() => {
+            text.textContent= 'App Developer';
+        }, 4000);
+        setTimeout(() => {
+            text.textContent= 'Game Developer';
+        }, 8000);
+        setTimeout(() => {
+            text.textContent= 'Machine Learning';
+        }, 12000);
+        setTimeout(() => {
+            text.textContent= 'Youtuber'
+
+        }, 16000);
+    }
+    textChange()
+    setInterval(textChange,20000)
+   
+
+</script>

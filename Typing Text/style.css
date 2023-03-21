@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+.container{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 50vh;
+    width: 100%;
+
+
+}
+
+.text.text-first{
+   color: brown;
+
+}
+.text{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+
+.text-sec::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border-left: 2px solid red;
+    animation: animate 4s steps(15) infinite;
+
+    
+}
+@keyframes animate {
+    30%{
+        left:calc(100% + 10px)
+    }
+    100%{
+        left: 0%;
+    }
+}
