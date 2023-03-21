@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change BackgroundColor</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div id="main_div">
+        <div id="h2_div">
+            <h2 id="rgb_h2">rgba(0, 0, 0, 1)</h2>
+        </div>
+        <div class="input_div">
+            <div>
+                <h3 style="color: red;">RED</h3>
+                <div>
+                <button onclick="redColorDec()" >-</button>
+                <input type="text" name="red" id="red" value="0" > 
+                <button onclick="redColorInc()" >+</button>
+                </div>
+            </div>
+            <div>
+                <h3 style="color: green;">GREEN</h3>
+                <div>
+                <button onclick="greenColorDec()" >-</button>
+                <input type="text" name="green" id="green" value="0" >
+                <button  onclick="greenColorInc()" >+</button>
+                </div>
+            </div>
+            <div>
+                <h3 style="color: blue;">BLUE</h3>
+                <div>
+                <button onclick="blueColorDec()">-</button>
+                <input type="text" name="blue" id="blue" value="0">
+                <button  onclick="blueColorInc()">+</button>
+                </div>
+            </div>
+            <div>
+                <h3>ALPHA</h3>
+                <div>
+                <button onclick="alphaColorDec()">-</button>
+                <input type="text" name="alpha" id="alpha" value="1">
+                <button  onclick="alphaColorInc()">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
