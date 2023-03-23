@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd</title>
+    <style>
+        body{
+            font-family: sans-serif;
+
+        }
+        div{
+          
+            margin: auto;
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        input{
+            padding:.2rem 1rem;
+            font-size: 1.4rem;
+            /* border-color: red; */
+            outline-color:red; 
+        }
+        button{
+            padding: .5rem 1rem;
+            
+            width: fit-content;
+        }
+       
+    </style>
+</head>
+<body>
+    <h2 align="center">CHECK EVEN ODD NUMBER</h2>
+    <div >
+        <input type="text" name="txt_no" id="txt_no"  placeholder="ENTER NUMBER ">
+        <input type="text" id="result" name="result" disabled>
+        <button onclick="btnCheckEvenOdd()"><b>Check Number</b></button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
