@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Greater Number</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        table{
+            margin: auto;
+            width: 60%;
+        }
+        input{
+            padding: .5rem 1rem;
+            width: 100%;
+            
+        }
+        td{
+            margin-top: 1rem;
+            border:1px solid ;
+            padding: .5rem;
+        }
+
+        button{
+            padding:.5rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        
+        <tr>
+            <td>
+                <label for="">First Number : </label>
+            </td>
+            <td><input type="text" name="first_num" id="first_num"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Second Number : </label>
+            </td>
+            <td><input type="text" name="second_num" id="second_num"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Third Number : </label>
+            </td>
+            <td><input type="text" name="third_num" id="third_num"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Fourth Number : </label>
+            </td>
+            <td><input type="text" name="fourth_num" id="fourth_num"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Fiveth Number : </label>
+            </td>
+            <td><input type="text" name="fiveth_num" id="fiveth_num"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="checkGreaterNumber()">Check Number</button></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Greater Number : </label>
+            </td>
+            <td><input type="text" name="greater" id="greater"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Smaller Number </label>
+            </td>
+            <td><input type="text" name="smaller" id="smaller"></td>
+        </tr>
+    </table>
+    <script src="./index.js"></script>
+</body>
+</html>
