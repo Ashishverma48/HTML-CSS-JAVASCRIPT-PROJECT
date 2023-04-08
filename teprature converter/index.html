@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converture</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: sans-serif;
+        gap: 2rem;
+
+    }
+    h1{
+        text-align: center;
+        
+    }
+    div{
+        /* border: 2px solid red; */
+        padding: 1rem  3rem;
+    }
+    input{
+        padding: .5rem 1rem ;
+        margin-inline: 1rem;
+    }
+    button{
+        padding: .4rem 3rem;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h1>Temprature Converter</h1>
+    <div>
+        <label for="inp_celc">Celcius</label>
+        <input type="text" name="inp_celc" id="inp_celc" placeholder="Celcius" oninput="checkFarenhite()">
+        <label for="inp_farn">Farenheit</label>
+        <input type="text" name="inp_farn" id="inp_farn" placeholder="Farenheit" oninput="checkCelcius()">
+
+    </div>
+    <button id="resetBtn" onclick="resetInput()">Reset</button>
+</body>
+</html>
+<script>
+    function checkFarenhite(){
+        let inp_celc = document.getElementById('inp_celc');
+        let inp_farn = document.getElementById('inp_farn');
+       
+        let newCelc = parseInt(inp_celc.value)
+        inp_farn.value = newCelc*1.8+32
+    }
+    function checkCelcius(){
+        let inp_celc = document.getElementById('inp_celc');
+        let inp_farn = document.getElementById('inp_farn');
+        let newFarn = Number(inp_farn.value)
+        inp_celc.value = (newFarn-32)*5/9;
+        
+    }
+    function resetInput(){
+        let btn = document.getElementById('resetBtn');
+        let inp_celc = document.getElementById('inp_celc');
+        let inp_farn = document.getElementById('inp_farn');
+        inp_celc.value = "";
+        inp_farn.value = "";
+        
+
+    }
+</script>
