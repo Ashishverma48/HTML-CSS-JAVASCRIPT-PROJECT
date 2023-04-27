@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&family=Roboto:wght@400;500&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    /* padding: 3rem; */
+    width: 100%;
+    gap: 10rem;
+    
+}
+h1{
+    padding-block: .8rem;
+}
+button{
+   width: fit-content;
+   padding: .8rem 1.5rem;
+   font-weight: 450;
+   background-color: rgb(13, 27, 66);
+   color: white;
+   border: 0;
+   border-radius: 3px;
+   margin-top: 1rem;
+   cursor: pointer;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    /* gap: 1rem;? */
+    background: rgb(13, 27, 66);
+    align-items: center;
+    padding: 2rem 1rem;
+    height: 100vh;
+    position: sticky;
+    
+}
+nav a{
+    color:rgba(255, 255, 255, 0.895);
+    font-weight: 450;
+    text-decoration: none;
+    padding: .8rem 2rem;
+    width: 100%;
+}
+nav a:hover{
+   
+    background: rgba(34, 70, 167, 0.779);
+}
+.right-section{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin-right: 5rem;
+ 
+}
+#basic-info{
+/* border: 2px solid ; */
+display: flex;
+
+flex-direction: column;
+gap: .4rem;
+height: 110VH;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1REM;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.502);
+    border-radius: 5px;
+}
+.input{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    width: inherit;
+    gap: 1rem;
+
+
+}
+.input>div{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    position: relative;
+    width: 100%;
+}
+.main-form select{
+    padding: .8rem 1rem;
+}
+
+.main-form input{
+    padding: .8rem 1rem;
+    outline: none;
+}
+
+.main-form label{
+    font-weight: 550;
+    
+}
+.main-form label::after{
+    /* position: absolute; */
+    content: '*';
+    top: -5px;
+    right: inherit;
+    color: red  
+    
+}
+.main-form textarea{
+    padding: .8rem 1rem ;
+}
+
+/* RESUME  */
+.resume h1{
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+/* education  */
+.education button{
+    padding: .6rem 2em;
+    
+
+
+}
+/*experience */
+.experience{
+    margin-top: 4rem;
+}
