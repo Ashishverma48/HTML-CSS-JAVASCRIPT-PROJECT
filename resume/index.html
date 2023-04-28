@@ -7,199 +7,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resum.css">
 </head>
 
 <body>
 
 
-    <nav>
-        <a href="#">Basic Info</a>
-        <a href="">Education</a>
-        <a href="">Work Expeience</a>
-        <a href="">Skill</a>
-        <a href="">Achievement</a>
-        <a href="">Project</a>
-
-        <a href="">Social Link</a>
-        <a href="#resume" onclick="showResume()">Your Resume</a>
-    </nav>
-    <main class="right-section">
-        <section id="basic-info">
-            <h2>PERSONAL INFORMATON </h2>
-            <p>This information helps the employer to contact you, in case you are shortlisted</p>
-            <div class="main-form">
-                <div class="input">
-                    <div>
-                        <label for="">FULL NAME</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="ASHISH KUMAR VERMA">
-                    </div>
-                    <div><label for="">PHONE NUMBER</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="7387874589">
-                    </div>
+    <section id="basic-info">
+        <h1>CREATE RESUME</h1>
+        <h2>PERSONAL INFORMATON </h2>
+        <p>This information helps the employer to contact you, in case you are shortlisted</p>
+        <div class="main-form">
+            <div class="input">
+                <div>
+                    <label for="">FULL NAME</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="ASHISH KUMAR VERMA">
                 </div>
-                <div class="input">
-                    <div>
+                <div><label for="">PHONE NUMBER</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="7387874589">
+                </div>
+            </div>
+            <div class="input">
+                <!-- <div>
                         <label for="">TITLE</label>
                         <input type="text" id="title" name="title" placeholder="WEB DEVELOPER">
-                    </div>
-                    <div>
-                        <label for="">EMAIL</label>
-                        <input type="email" id="email" name="email" placeholder="ashishkv845@gmail.com">
-                    </div>
+                    </div> -->
+                <div>
+                    <label for="">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="ashishkv845@gmail.com">
                 </div>
-                <div class="input">
-                    <div>
-                        <label for="">State</label>
-                        <select name="state" id="state">
-                            <option value="">Select</option>
-                            <option value="UTTERPRADESH">UTTERPRADESH</option>
-                            <option value="DELHI">DELHI</option>
-                            <option value="PUNJAB">PUNJAB</option>
-                            <option value="BIHAR">BIHAR</option>
-                            <option value="MAHARASTRA">MAHARASTRA</option>
-                            <option value="GUJRAT">GUJRAT</option>
-                            <option value="TAMILNADU">TAMILNADU</option>
-                            <option value="HARYANA">HARYANA</option>
-                            <option value="KERAL">KERAL</option>
-                            <option value="RAJSTHAN">RAJSTHAN</option>
-                            <option value="MADHYPRADESH">MADHYPRADESH</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="">CITY</label>
-                        <input type="text" id="city" name="city" placeholder="Noida">
-                    </div>
-                    <div>
-                        <label for="">PIN CODE</label>
-                        <input type="number" id="pincode" name="pincode" placeholder="111233">
-                    </div>
+                <div>
+                    <label for="">CITY</label>
+                    <input type="text" id="city" name="city" placeholder="Noida">
+                </div>
+            </div>
+            <div class="input">
+                <div>
+                    <label for="">State</label>
+                    <select name="state" id="state">
+                        <option value="">Select</option>
+                        <option value="UTTERPRADESH">UTTERPRADESH</option>
+                        <option value="DELHI">DELHI</option>
+                        <option value="PUNJAB">PUNJAB</option>
+                        <option value="BIHAR">BIHAR</option>
+                        <option value="MAHARASTRA">MAHARASTRA</option>
+                        <option value="GUJRAT">GUJRAT</option>
+                        <option value="TAMILNADU">TAMILNADU</option>
+                        <option value="HARYANA">HARYANA</option>
+                        <option value="KERAL">KERAL</option>
+                        <option value="RAJSTHAN">RAJSTHAN</option>
+                        <option value="MADHYPRADESH">MADHYPRADESH</option>
+                    </select>
                 </div>
 
                 <div>
-                    <div>
-                        <label for="">ABOUT</label>
-                        <textarea name="aboutAs" id="aboutAs" cols="100" rows="7"
-                            placeholder="Tell us more about you"></textarea>
-                    </div>
+                    <label for="">PIN CODE</label>
+                    <input type="number" id="pincode" name="pincode" placeholder="111233">
                 </div>
             </div>
-            <!-- <button onclick="showResume()" >Next And Save </button> -->
-        </section>
-        <section id="education-section" class="education">
-            <h1>EDUCATIONAL DETAIL</h1>
 
-            <div class="main-form" id="education">
-                <div class="input">
-                    <div>
-                        <label for="">DEGREE</label>
-                        <input type="text" id="degree" name="degree" placeholder="BCA">
-                    </div>
-
-
-                    <div>
-                        <label for="">COLLEGE / BOARD</label>
-                        <input type="text" id="college-name" name="college-name" placeholder="AKTU LUCKNOW">
-                    </div>
+            <div class="input">
+                <div>
+                    <label for="">CARRIER OBJECTIVE</label>
+                    <textarea name="aboutAs" id="aboutAs" cols="100" rows="7"
+                        placeholder="Tell us more about you"></textarea>
                 </div>
-                <div class="input">
-                    <div>
-                        <label for="">PASSING YEAR</label>
-                        <select name="passYear" id="passYear">
-                            <option value="">Select</option>
-                            <option value="2022">2022</option>
-                            <option value="2021">2021</option>
-                            <option value="2020">2020</option>
-                            <option value="2019">2019</option>
-                            <option value="2018">2018</option>
-                            <option value="2017">2017</option>
-                            <option value="2016">2016</option>
-                            <option value="2015">2015</option>
-                            <option value="2014">2014</option>
-                            <option value="2013">2013</option>
-                            <option value="2012">2012</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="">PERCENTAGE</label>
-                        <input type="text" id="percentage" name="percentage" placeholder="88%">
-                    </div>
+            </div>
+        </div>
+        <!-- <button onclick="showResume()" >Next And Save </button> -->
+    </section>
+    <section id="education-section" class="education">
+        <h1>EDUCATIONAL DETAIL</h1>
 
+        <div class="main-form" id="education">
+            <H5>GRADUATION DETAILS</H5>
+            <div class="input">
+                <div>
+                    <label for="">DEGREE</label>
+                    <input type="text" id="degree-gr" name="degree" placeholder="BCA">
                 </div>
-                
+
+
+                <div>
+                    <label for="">COLLEGE NAME</label>
+                    <input type="text" id="college-name-gr" name="college-name" placeholder="YOUR COLLEGE NAME">
+                </div>
+            </div>
+
+            <div class="input">
+                <div>
+                    <label for="">PASSING YEAR</label>
+                    <input type="text" name="passYearGr" id="passYearGr" placeholder="2022">
+                </div>
+                <div>
+                    <label for="">PERCENTAGE </label>
+                    <input type="text" id="percentageGr" name="percentage" placeholder="9.0">
+                </div>
 
             </div>
-            
-            <button onclick="addEduBtn() " id="addEduBtn">ADD MORE</button>
-        </section>
-        <section id="experience-section" class="experience">
-            <h1>EXPERIENCE </h1>
-
-            <div class="main-form" id="experience">
-                <div class="input">
-                    <div>
-                        <label for="">JOB ROLE</label>
-                        <input type="text" id="job-role" name="job-role" placeholder="WEB DEVELOPER">
-                    </div>
 
 
-                    <div>
-                        <label for="">COMPANY NAME</label>
-                        <input type="text" id="company-name" name="company-name" placeholder="TCS">
-                    </div>
+        </div>
+        <br>
+        <div class="main-form" id="education">
+            <H5>12 <sup>th</sup> DETAILS</H5>
+            <div class="input">
+
+
+
+                <div>
+                    <label for="">12 <sup>th</sup> SCHOOL NAME</label>
+                    <input type="text" id="college-name_12" name="college-name-12" placeholder="ENTER SCHOOL NAME">
                 </div>
-                <div class="input">
-                    <div>
-                        <label for="">WORKING YEAR</label>
-                        <select name="workYear" id="workYear">
-                            <option value="">Select</option>
-                            <option value="2022">2022</option>
-                            <option value="2021">2021</option>
-                            <option value="2020">2020</option>
-                            <option value="2019">2019</option>
-                            <option value="2018">2018</option>
-                            <option value="2017">2017</option>
-                            <option value="2016">2016</option>
-                            <option value="2015">2015</option>
-                            <option value="2014">2014</option>
-                            <option value="2013">2013</option>
-                            <option value="2012">2012</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="">JOB DISCRIPTION</label>
-                        <input type="text" id="discription" name="discription">
-                    </div>
-
+            </div>
+            <div class="input">
+                <div>
+                    <label for="">PASSING YEAR</label>
+                    <input type="text" name="passYear_12" id="passYear_12" placeholder="2019">
                 </div>
-                
+                <div>
+                    <label for="">PERCENTAGE </label>
+                    <input type="text" id="percentage_12" name="percentage_12" placeholder="90%">
+                </div>
 
             </div>
-            <button onclick="addExpBtn() " id="addExpBtn">ADD MORE</button>
 
-        </section>
-        <!-- SKILL START -->
-        <section id="skill-section" class="skill">
-            <H1>SKILL</H1>
-            <div class="main-form" id="skill">
-                <div class="input">
-                    <div>
-                        <label for="">SKILL 1</label>
-                        <input type="text" id="skillName1" class="skillClass" name="skillName1" placeholder="ENTER SKILL">
-                    </div>
-                    <div><label for="">SKILL 2</label>
-                        <input type="tel" id="skillName2" name="skillName2" class="skillClass" placeholder="ENTER SKILL">
-                    </div>
+
+        </div>
+        <br>
+        <div class="main-form" id="education">
+            <H5>10 <sup>th</sup> DETAILS</H5>
+            <div class="input">
+
+
+
+                <div>
+                    <label for="">10 <sup>th</sup> SCHOOL NAME</label>
+                    <input type="text" id="college-name_10" name="college-name_10" placeholder="ENTER SCHOOL NAME">
                 </div>
-                <div class="input">
-                    <div>
-                        <label for="">SKILL 3</label>
-                        <input type="text" id="skillName3" class="skillClass" name="skillName3" placeholder="ENTER SKILL">
-                    </div>
-                    <div><label for="">SKILL 4</label>
-                        <input type="tel" id="skillName4" name="skillName4" class="skillClass" placeholder="ENTER SKILL">
-                    </div>
+            </div>
+            <div class="input">
+                <div>
+                    <label for="">PASSING YEAR</label>
+                    <input type="text" name="passYear_10" id="passYear_10" placeholder="2016">
                 </div>
-                <div class="input">
+                <div>
+                    <label for="">PERCENTAGE </label>
+                    <input type="text" id="percentage_10" name="percentage_10" placeholder="75%">
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- <button id="addEduBtn" onclick="showAddBtn()">ADD MORE</button> -->
+    </section>
+    <section id="experience-section" class="experience">
+        <h1>EXPERIENCE </h1>
+
+        <div class="main-form" id="experience">
+            <div class="input">
+                <div>
+                    <label for="">JOB ROLE</label>
+                    <input type="text" id="job-role" name="job-role" placeholder="WEB DEVELOPER">
+                </div>
+
+
+                <div>
+                    <label for="">COMPANY NAME</label>
+                    <input type="text" id="company-name" name="company-name" placeholder="TCS">
+                </div>
+            </div>
+            <div class="input">
+                <div>
+                    <label for="">WORKING YEAR</label>
+                    <select name="workYear" id="workYear">
+                        <option value="">Select</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">JOB DISCRIPTION</label>
+                    <input type="text" id="discription" name="discription">
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- <button  id="addExpBtn">ADD MORE</button> -->
+
+    </section>
+    <!-- SKILL START -->
+    <section id="skill-section" class="skill">
+        <H1>TECHNICAL PROFICIENCY</H1>
+        <div class="main-form" id="skill">
+            <div class="input">
+                <div>
+                    <label for="">PROGRAMMING LANGUAGE</label>
+                    <input type="text" id="skillName1" class="skillClass" name="skillName1"
+                        placeholder="C, C++, PYTHON, JAVA">
+                </div>
+                <div><label for="">DATABASE</label>
+                    <input type="tel" id="skillName2" name="skillName2" class="skillClass" placeholder="SQL, MYSQL">
+                </div>
+            </div>
+            <div class="input">
+                <div>
+                    <label for="">WEB TECHNOLOGY</label>
+                    <input type="text" id="skillName3" class="skillClass" name="skillName3"
+                        placeholder="HTML, CSS, JAVASCRIPT">
+                </div>
+                <div><label for=""> TOOLS</label>
+                    <input type="tel" id="skillName4" name="skillName4" class="skillClass" placeholder="GIT,GITHUB">
+                </div>
+            </div>
+            <!-- <div class="input">
                     <div>
                         <label for="">SKILL 5</label>
                         <input type="text" id="skillName5" class="skillClass" name="skillName5" placeholder="ENTER SKILL">
@@ -207,53 +241,225 @@
                     <div><label for="">SKILL 6</label>
                         <input type="tel" id="skillName6" name="skillName6" class="skillClass" placeholder="ENTER SKILL">
                     </div>
+                </div> -->
+
+
+
+        </div>
+        <!-- <button onclick="sk()" id="addExpBtn">ADD</button>
+            <button onclick="addSkillBtn() " id="addExpBtn">ADD MORE</button> -->
+    </section>
+    <!-- SKILL END  -->
+    <!-- PERSONAL INFORMATION SECTION START -->
+    <section id="personal-section" class="education">
+        <h1>PERSONAL DETAIL</h1>
+
+        <div class="main-form" id="personal">
+            <div class="input">
+                <div>
+                    <label for="">FATHER NAME</label>
+                    <input type="text" id="fatherName" name="fatherName" placeholder="FATHER NAME">
                 </div>
-                <div class="input">
-                    <div>
-                        <label for="">SKILL 7</label>
-                        <input type="text" id="skillName7" class="skillClass" name="skillName7" placeholder="ENTER SKILL">
-                    </div>
-                    <div><label for="">SKILL 8</label>
-                        <input type="tel" id="skillName8" name="skillName8" class="skillClass" placeholder="ENTER SKILL">
-                    </div>
+
+
+                <div>
+                    <label for="">DATE OF BIRTH</label>
+                    <input type="text" id="dob" name="dob" placeholder="01/01/2000">
                 </div>
-               
-               
             </div>
-            <button onclick="sk()" id="addExpBtn">ADD</button>
-            <button onclick="addSkillBtn() " id="addExpBtn">ADD MORE</button>
-        </section>
-        <!-- SKILL END  -->
-        <section id="resume" class="resume">
-            <H1>RESUME</H1>
-            <H2 id="name-input"></H2>
-            <h3 id="title"></h3>
-            <P>Email Id : <span id="email-input"></span></P>
-            <p>Mobile : <span id="mobile-input"></span></p>
-            <p>Address : <span id="address-input"></span></p>
-            <hr>
-            <h3>ABOUT</h3>
-            <P id="about-input"></P>
-            <h3>EDUCATIONAL</h3>
-            <div class="resume-education">
-                <p id="passing-year">2022</p>
+            <div class="input">
+                <div>
+                    <label for="">GENDER</label>
+                    <input type="text" name="gender" id="gender" placeholder="Male">
+                </div>
+                <div>
+                    <label for="">NATIONALITY</label>
+                    <input type="text" id="nation" name="nation" placeholder="Indian">
+                </div>
+
+            </div>
+
+            <div class="input">
+                <div>
+                    <label for="">MARITAL STAUS</label>
+                    <input type="text" name="marital" id="marital" placeholder="Unmarried">
+                </div>
+                <div>
+                    <label for="">LANGUAGE KNOWN</label>
+                    <input type="text" id="language" name="language" placeholder="HINDI,ENGLISH,...">
+                </div>
+
+            </div>
+            <div class="input">
+                <div>
+                    <label for="">HOBBIES</label>
+                    <input type="text" name="hobbies" id="hobbies" placeholder="Playing Chess...">
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- <button id="addEduBtn" onclick="showAddBtn()">ADD MORE</button> -->
+    </section>
+    <SECtion><button onclick="showResume()" id="addExpBtn">SHOW RESUME</button> </SECtion>
+    <!-- PERSONAL INFORMATION SECTION END -->
+    <section id="resume" class="resume">
+        <H1>RESUME</H1>
+        <div class="introInResume">
+            <H2 id="name-input">ASHISH KUMAR VERMA</H2>
+
+            <P><b>Email Id : </b><span id="email-input">ASHIKV845@GMAIL.COM</span></P>
+            <p><b>Mobile : </b><span id="mobile-input">67672768768726</span></p>
+            <p><b>Address : </b><span id="address-input">NOIDA ,UTTERPRADESH,22122</span></p>
+        </div>
+        <hr>
+        <div class="carrierInResume">
+            <h3>CAREER OBJECTIIVE</h3>
+            <P id="about-input">As a fresher a functional (or) skill-based resume works better to get your first job,
+                where you highlight your education, skills, project works, achievements, internships, awards, etc. You
+                don’t need to have a fancy resume to get the job, a simple resume focused on your skills will do a
+                better job.</P>
+        </div>
+        <div class="educationInResume">
+            <h3>EDUCATIONAL QUALIFICATION: </h3>
+            <table class="resume-education">
+
+                <tr>
+                    <th>QUALIFICATION</th>
+                    <th>INSTITUTE</th>
+                    <TH>YEAR</TH>
+                    <TH>PERCENTAGE </TH>
+                </tr>
+                <tr>
+                    <td id="degreeName">BCA</td>
+                    <td id="collegeName">AKTU LUCKNOW</td>
+                    <td id="passing-year">2022</td>
+                    <td id="percentageResume">70%</td>
+                </tr>
+                <tr>
+                    <td id="inter">12th</td>
+                    <td id="school_12">UP BOARD</td>
+                    <td id="pass_12">2018</td>
+                    <td id="percent_12">65%</td>
+                <tr>
+                    <td id="highschool">10TH</td>
+                    <td id="school_10">UP BOARD</td>
+                    <td id="pass_10">2016</td>
+                    <td id="percent_10">75%</td>
+                </tr>
+
+
+
+
+                <!-- <p id="passing-year">2022</p>
                 <div>
                     <p id="degreeName">bca</p>
                     <p id="collegeName">iit</p>
                 </div>
-                <p id="percentageResume">6756</p>
-            </div>
-            <h3>EXPERIENCE</h3>
+                <p id="percentageResume">6756</p> -->
+            </table>
+        </div>
+        <div class="expInResume">
+            <h3>EXPERIENCE : </h3>
             <div class="resumeExperience">
-                <p id="jobyear">2022</p>
-                <p id="jobRole-resume">hghg</p>
-                <p id="companyName-resume">kjnm</p>
-                <p id="discriptionResume"></p>
+                <p id="jobyear">2019</p>
+                <p id="jobRole-resume">WEB DEVELOPER</p>
+                <p id="companyName-resume">CETPA INFOTECH PVT</p>
+                <p id="discriptionResume">As a fresher your resume should focus on your education and skills and a
+                    1-page resume will be enough for freshers.</p>
 
             </div>
-            <h3>SKILL</h3>
-            <h2 id="skillResume"></h2>
-        </section>
+        </div>
+        <div class="skillInResume">
+            <h3>SKILL : </h3>
+            <!-- <h2 id="skillResume"></h2> -->
+            <table id="skillName">
+                <tr>
+                    <td><span></span></td>
+                    <td>Programming Language</td>
+                    <td>:</td>
+                    <td id="proLanguage">PYTHON , JAVASCRIPT</td>
+                </tr>
+                <tr>
+                    <td><span></span></td>
+                    <td>Database</td>
+                    <td>:</td>
+                    <td id="database">SQL</td>
+                </tr>
+                <tr>
+                    <td><span></span></td>
+                    <td>Web Technologies</td>
+                    <td>:</td>
+                    <td id="webTech">HTML CSS BOOTSTRAP</td>
+                </tr>
+                <tr>
+                    <td><span></span></td>
+                    <td>TOOLS</td>
+                    <td>:</td>
+                    <td id="os">GIT HUB</td>
+                </tr>
+            </table>
+        </div>
+        <div class="personalInfoInResume">
+            <h3>PERSONAL INFORMATION : </h3>
+            <table>
+
+                <tr>
+                    
+                    <th>Father's Name </th>
+                    <td>:</td>
+                    <td id="txtFatherName">RAM SHYAM</td>
+                </tr>
+                <tr>
+                    <th>DOB</th>
+                    <td>:</td>
+                    <td id="txtDob">27/07/2000</td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>:</td>
+                    <td id="txtGender">MALE</td>
+                </tr>
+                <tr>
+                    <th>Nationality</th>
+                    <td>:</td>
+                    <td id="txtNation">INDIAN</td>
+                </tr>
+                <tr>
+                    <th>Marital Status</th>
+                    <td>:</td>
+                    <td id="txtMarital">UNMARRIED</td>
+                </tr>
+                <tr>
+                    <th>Language Known</th>
+                    <td>:</td>
+                    <td id="txtLanguage">HINDI,ENGLISH </td>
+                </tr>
+                <tr>
+                    <th >Hobbies </th>
+                    <td>:</td>
+                    <td id="txtHobbies"> MUSIC LISTING </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="declaration">
+            <h3>DECLARATION </h3>
+            <P>I heardly declare that all the above mentioned is true to the best of my knowladge and belief.</P>
+        </div>
+        <div>
+            <div class="placeDate">
+                <P>Place : <span id="place">NOIDA</span></P>
+                <p>Date : <span id="date">11/22/2022</span></p>
+            </div>
+            <p id="signature">ASHISH KUMAR VERMA</p>
+
+        </div>
+    </section>
     </main>
 
 </body>
