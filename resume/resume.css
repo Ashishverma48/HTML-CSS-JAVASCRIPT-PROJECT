@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400;500&family=Great+Vibes&family=Roboto:wght@400;500&family=Satisfy&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.resume{
+    border: 2px solid red;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.resume h3{
+    /* text-align: center; */
+    padding-block: .8rem;
+    /* text-decoration: underline; */
+}
+.introInResume{
+    /* border: 2px solid red; */
+    line-height: 1.5rem;
+    /* width: 40%; */
+    padding-block: 1rem;
+    border-block: 1.5px solid;
+}
+.introInResume h2{
+    padding-bottom: .5rem;
+    
+}
+.educationInResume table{
+    border: 1px solid ;
+    width: 100%;
+    border-collapse: collapse;
+    
+
+}
+.educationInResume td,th{
+    border: 1px solid;
+    padding: .4REM;
+    text-align: center;
+}
+.educationInResume th{
+    background-color: rgba(0, 0, 0, 0.169);
+}
+.skillInResume table{
+    /* border: 2px solid red; */
+   
+    margin-left: 3rem;
+}
+.skillInResume tr,td{
+     /* border: 1px solid; */
+}
+.skillInResume td{
+    padding-inline-end: 1rem;
+    /* background-color: red; */
+}
+.skillInResume  span{
+   height: 6px;
+   width: 6px;
+   
+   display: inline-block;
+   background-color: black;
+   border-radius: 50%; 
+   
+   /* padding-inline-end: 1rem;     */
+}
+.personalInfoInResume table{
+    margin-left: 3rem;
+    /* border: 1px solid; */
+   
+}
+.personalInfoInResume th{
+    border:0;
+    text-align: start;
+    font-weight: 450;
+    
+    padding:.3rem 5rem .1rem 0;
+}
+.personalInfoInResume table td{
+    padding-right: 10px;
+}
