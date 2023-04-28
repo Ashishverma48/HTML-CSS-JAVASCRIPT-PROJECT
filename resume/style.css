@@ -6,8 +6,8 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    display: flex;
-    /* padding: 3rem; */
+    /* display: flex; */
+    padding: 3rem;
     width: 100%;
     gap: 10rem;
     
@@ -26,11 +26,11 @@ button{
    margin-top: 1rem;
    cursor: pointer;
 }
-nav{
+/* nav{
     display: flex;
     flex-direction: column;
     width: 20%;
-    /* gap: 1rem;? */
+   
     background: rgb(13, 27, 66);
     align-items: center;
     padding: 2rem 1rem;
@@ -48,10 +48,11 @@ nav a{
 nav a:hover{
    
     background: rgba(34, 70, 167, 0.779);
-}
-.right-section{
+}  */
+main{
     /* border: 2px solid red; */
-    width: 70%;
+    width: 100%;
+    padding: 3rem;
     margin-right: 5rem;
  
 }
@@ -61,7 +62,10 @@ display: flex;
 
 flex-direction: column;
 gap: .4rem;
-height: 110VH;
+/* height: 110VH; */
+}
+section{
+    margin-top: 2rem;
 }
 
 .main-form{
@@ -130,4 +134,11 @@ height: 110VH;
 /*experience */
 .experience{
     margin-top: 4rem;
+}
+.experience .main-form label::after{
+    /* position: absolute; */
+    content: '';
+    top: 0px;
+    
+    
 }
