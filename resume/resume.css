@@ -84,3 +84,18 @@
 .personalInfoInResume table td{
     padding-right: 10px;
 }
+
+.placeDate{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+}
+.placeDate p{
+    padding-bottom: .6rem ;
+}
+
+#signature{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7rem;
+}
