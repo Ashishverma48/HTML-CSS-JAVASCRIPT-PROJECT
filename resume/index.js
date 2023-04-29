@@ -73,10 +73,10 @@ function skillAddInResume(){
    
 }
 function showSkillInResume(skill_1,skill_2,skill_3,skill_4){
-    document.getElementById('proLanguage').textContent=` : ${skill_1}`
-    document.getElementById('database').textContent=` : ${skill_2}`
-    document.getElementById('webTech').textContent=` : ${skill_3}`
-    document.getElementById('os').textContent=` : ${skill_4}`
+    document.getElementById('proLanguage').textContent=skill_1
+    document.getElementById('database').textContent=skill_2
+    document.getElementById('webTech').textContent=skill_3
+    document.getElementById('os').textContent=skill_4
     
 }
 
@@ -133,13 +133,13 @@ function addPersonalInfo(){
 }
 
 function showPersonalInfoInResume(father,dob,gender,nation,marital,language,hobbies) {
-    document.getElementById('txtFatherName').textContent=` : ${father}`
-    document.getElementById('txtDob').textContent=` : ${dob}`
-    document.getElementById('txtGender').textContent=` : ${gender}`
-    document.getElementById('txtNation').textContent=` : ${nation}`
-    document.getElementById('txtMarital').textContent=` : ${marital}`
-    document.getElementById('txtLanguage').textContent=` : ${language}`
-    document.getElementById('txtHobbies').textContent=` : ${hobbies}`
+    document.getElementById('txtFatherName').textContent=father
+    document.getElementById('txtDob').textContent=dob
+    document.getElementById('txtGender').textContent=gender
+    document.getElementById('txtNation').textContent=nation
+    document.getElementById('txtMarital').textContent=marital
+    document.getElementById('txtLanguage').textContent=language
+    document.getElementById('txtHobbies').textContent=hobbies
 }
 // function addExpBtn(){
 //     var experience = document.getElementById('experience-section');
@@ -202,7 +202,9 @@ function createResume(name,email,mobileNo,city,state,pin,about){
     document.getElementById('about-input').innerText= about;
     document.getElementById('place').textContent= city;
     document.getElementById('date').textContent= new Date().toLocaleDateString();
-    document.getElementById('signature').textContent= name;
+    let  newName = name.toLowerCase()
+   
+    document.getElementById('signature').textContent= newName;
 
    
     
@@ -221,3 +223,8 @@ function createResume(name,email,mobileNo,city,state,pin,about){
 //     })
 // }
 
+
+function download(){
+    let resume = document.getElementById('resume');
+    window.print()
+}
